@@ -1,29 +1,294 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>DevOps Static Website newwww</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>pet shop</title>
 
-<body>
+       <!--linking font awesome for icons-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+       <link rel="stylesheet" href="style.css">
+   </head>
+ <body>
 
-    <header>
-        <h1>AWS DevOps Project Updated</h1>
-        <p>GitHub + AWS CodePipeline + S3</p>
-    </header>
+ <!-- Header/Navbar -->
+  <header>
+    <nav class="navbar section-content">
+      <a href="#" class="nav-logo">
+        <h2 class="logo-text">🐾Pets World</h2>
+      </a>
 
-    <section>
-        <div class="card">
-            <h2>About Project</h2>
-            <p>
-                This website is automatically deployed using AWS DevOps services.
-            </p>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#pets" class="nav-link">Pets</a></li>
+        <li class="nav-item"><a href="#product" class="nav-link">Products</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li> 
+	<li class="nav-item" id="login"><a href="login.html" class="nav-link">Login</a></li>
+      </ul>
+	
+    </nav>
+  </header>
+
+    <!--hero section-->
+    <section class="hero-section" id="home">
+    <div class="section-content">
+    <div class="hero-details">
+      <h2 class="title">Where Every Pet Feels Like A Home</h2>
+      <h3 class="subtitle">make your great day special with us</h3>
+      <p class="description">Welcome To India's Best-Loved Online Pet Store For Food And Accessories.
+</p>
+      
+      <div class="buttons">
+         <a href="#product" class="button order-now">Order-Now</a>
+         <a href="#contact" class="button contact-us">Contact-Us</a>
+</div>
+</div>
+<div class="hero-image-wrapper">
+     <img src="C:\Users\ACER\Downloads\petsworld.jpeg" alt="hero" class="hero-image">
+ </section>
+
+   <!--about section-->
+     <section class="about-section" id="about">
+      <div class="section-content">
+       <div class="about-image-wrapper">
+         <img src="C:\Users\ACER\Desktop\Pets world\about us.jpg" alt="about" class="About-image">
         </div>
-    </section>
+        <div class="about-details">
+          <h2 class="section-title">About Us</h2>
+          <p class="text">petsworld.com is India's first and largest online pet store catering from year 2003 to dogs, cats, birds, fishes and all your small companions. Petsworld.com is a one stop platform for all the pets' needs. Our team continuously works towards bringing you the latest products and brands. 
+		                  We strive to provide you with a quick and hassle free shopping experience by offering you a wide range of pet products and services including vets, boarding, lodging, grooming as well as education for making your pet healthy for life long. We have attempted to create a platform with over 2500 quality products for you. 
+						  We assure our customers of unmatched quality and timely service. The website has been designed to make your experience simple and convenient to buy your products in the least amount and high quality. We constantly thrive to bring convenience and having a transparent system to ship your supplies each month.
+	  </p>
+	     <div class="social-link-list">
+		 <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+		  <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+		  <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+             </div>
+           </div>
+	 </div>
+       </section>
 
-    <footer>
-        <p>Created by Prachi Kudale</p>
-    </footer>
+
+<!-- Pets Section -->
+
+  <section class="pets-section" id="pets">
+    <h2 class="section-title">Our Pets</h2>
+    <div class="pets-container">
+
+      <!-- Pet 1 -->
+      <div class="pet-card">
+        <img src="C:\Users\ACER\Desktop\Pets world\German_Shepherd.jpeg" alt="German_Shepherd" class="pets-image">
+	<h3 class="pet-name">German Shepherd</h3>
+        <p class="pet-info">
+          <strong>Lifespan:</strong> 11 years<br/>
+          <strong>Height:</strong> Male/Female: 65/60 cm<br/>
+          <strong>Climate:</strong> Suitable for Indian climate<br/>
+          <strong>Origin:</strong> Germany
+        </p>
+	  <p class="pet-price"><strong>Price:</strong> ₹25,000</p>
+ 	 <Strong>Quantity: <input type="number" value="0" min="1" class="pet-qty"></Strong>
+  	<button class="add-to-cart-pet">Add to Cart</button>
+      </div>
+
+      <!-- Pet 2 -->
+      <div class="pet-card">
+        <img src="C:\Users\ACER\Desktop\Pets world\Siberian Huskies.jpeg" alt="Siberian Huskies" class="pets-image">
+	<h3 class="pet-name">Siberian Husky</h3>
+        <p class="pet-info">
+          <strong>Lifespan:</strong> 12–15 years<br/>
+          <strong>Height:</strong> 50–58 cm<br/>
+          <strong>Climate:</strong> Not suitable for Indian climate<br/>
+          <strong>Origin:</strong> Siberia, Russia
+        </p>
+	<p class="pet-price"><strong>Price:</strong> ₹55,000</p>
+ 	 <Strong>Quantity: <input type="number" value="0" min="1" class="pet-qty"></Strong>
+  	 <button class="add-to-cart-pet">Add to Cart</button>
+      </div>
+
+      <!-- Pet 3 -->
+      <div class="pet-card">
+        <img src="C:\Users\ACER\Desktop\Pets world\labrador.jpg" alt="lab" class="pets-image">
+	<h3 class="pet-name">Labrador</h3>
+        <p class="pet-info">
+          <strong>Lifespan:</strong> 5 months<br/>
+          <strong>Height:</strong> 38 cm<br/>
+          <strong>Climate:</strong> Suitable for Indian climate<br/>
+          <strong>Origin:</strong> UK/Canada
+        </p>
+	 <p class="pet-price"><strong>Price:</strong> ₹15,000</p>
+ 	 <Strong>Quantity: <input type="number" value="0" min="1" class="pet-qty"></Strong>
+  	<button class="add-to-cart-pet">Add to Cart</button>
+      </div>
+
+      <!-- Pet 4 -->
+      <div class="pet-card">
+        <img src="C:\Users\ACER\Desktop\Pets world\persian cat.jpg" alt="persian_cat" class="pets-image">
+	<h3 class="pet-name">Persian Cat</h3>
+        <p class="pet-info">
+          <strong>Description:</strong> Known for its long fur and calm nature.<br/>
+          <strong>Origin:</strong> Iran (Persia)<br>
+	  <strong>Age:</strong> 3 years<br>
+	  <strong>Gender:</strong> Female<br>
+        </p>
+	<p class="pet-price"><strong>Price:</strong> ₹25,000</p>
+ 	 <Strong>Quantity: <input type="number" value="0" min="1" class="pet-qty"></Strong>
+  	 <button class="add-to-cart-pet">Add to Cart</button>
+      </div>
+
+      <!-- Pet 5 -->
+      <div class="pet-card">
+         <img src="C:\Users\ACER\Desktop\Pets world\Ragdoll.jpg" alt="Ragdoll" class="pets-image">
+	<h3 class="pet-name">Ragdoll</h3>
+        <p class="pet-info">
+          <strong>Description:</strong> Docile cat with striking blue eyes and loving personality.<br/>
+          <strong>Origin:</strong> USA<br>
+	  <strong>Age:</strong> 2 years<br>
+	  <strong>Gender:</strong> Male<br>
+        </p>
+	<p class="pet-price"><strong>Price:</strong> ₹35,000</p>
+ 	 <Strong>Quantity: <input type="number" value="0" min="1" class="pet-qty"></Strong>
+  	 <button class="add-to-cart-pet">Add to Cart</button>
+      </div>
+
+      <!-- Pet 6 -->
+      <div class="pet-card">
+       <img src="C:\Users\ACER\Desktop\Pets world\american_shorthair.jpg" alt="american_shorthair" class="pets-image">
+	<h3 class="pet-name">American Shorthair </h3>
+        <p class="pet-info">
+          <strong>Description:</strong> Adaptable, calm, and great with families.<br/>
+          <strong>Origin:</strong> USA<br>
+	  <strong>Age:</strong> 1.5 years<br>
+	  <strong>Gender:</strong> Female<br>
+        </p>
+	<p class="pet-price"><strong>Price:</strong> ₹15,000</p>
+ 	 <Strong>Quantity: <input type="number" value="0" min="1" class="pet-qty"></Strong>
+  	<button class="add-to-cart-pet">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+<!--- Product section--->
+
+<section class="product-slider" id="product">
+ <h2>Our Products</h2>
+  <div class="slider-container">
+    <div class="slider-wrapper">
+
+      <div class="slide">
+        <img src="C:\Users\ACER\Desktop\Pets world\Dog Leash.jpg" alt="Product 1">
+	<p class="product-name"><strong>Dog Leash</strong></p>
+        <p class="product-price">Price:₹100</p>
+  	<Strong>Quantity: <input type="number" value="0" min="1" class="product-qty"></Strong>
+  	<button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="slide">
+        <img src="C:\Users\ACER\Desktop\Pets world\Cat Toy.jpg" alt="Product 2">
+        <p class="product-name"><strong>Cat Toy</strong></p>
+        <p class="product-price">Price:₹510</p>
+        <Strong>Quantity: <input type="number" value="0" min="1" class="product-qty"></Strong>
+  	<button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="slide">
+        <img src="C:\Users\ACER\Desktop\Pets world\Dog Toy.jpg" alt="Product 3">
+        <p class="product-name"><strong>Dog Toy</strong></p>
+        <p class="product-price">Price:₹820</p>
+	<Strong>Quantity: <input type="number" value="0" min="1" class="product-qty"></Strong>
+  	<button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="slide">
+        <img src="C:\Users\ACER\Desktop\Pets world\Cat Food.jpg" alt="Product 4">
+        <p class="product-name"><strong>Cat Food</strong></p>
+        <p class="product-price">Price:₹280</p>
+	<Strong>Quantity: <input type="number" value="0" min="1" class="product-qty"></Strong>
+  	<button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="slide">
+        <img src="C:\Users\ACER\Desktop\Pets world\Dog Food.jpeg" alt="Product 5">
+        <p class="product-name"><strong>Dog Food</strong></p>
+        <p class="product-price">Price:₹2500</p>
+ 	<Strong>Quantity: <input type="number" value="0" min="1" class="product-qty"></Strong>
+  	<button class="add-to-cart">Add to Cart</button>
+      </div>
+      
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</section>
+
+<!-- Notification -->
+    <div id="cart-notification">
+        Added to cart!
+    </div>
+
+<!---service section--->
+
+<section class="services-section" id="services">
+  <h2 class="section-title">OUR SERVICES</h2>
+  <div class="services-container">
+    <div class="service-card">
+     <img src="C:\Users\ACER\Desktop\Pets world\Pet Grooming.jpg" alt="Pet Grooming" class="service-img" />
+       <h3>Pet Grooming</h3>
+      <p>Professional grooming services to keep your pets clean, stylish, and healthy.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="C:\Users\ACER\Desktop\Pets world\Veterinary Care.jpg" alt="Veterinary Care" class="service-img" />
+      <h3>Veterinary Care</h3>
+      <p>Expert vet consultations and health checkups for your beloved companions.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="C:\Users\ACER\Desktop\Pets world\Pet Boarding.jpg" alt="Pet Boarding" class="service-img" />
+      <h3>Pet Boarding</h3>
+      <p>Safe and comfortable boarding facilities while you’re away from home.</p>
+    </div>
+  </div>
+</section>
+
+
+   <!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <div class="contact-container section-content">
+    <div class="contact-info">
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 123 Kothrud, Maharastra, Pune City</li>
+        <li><i class="fas fa-envelope"></i> info@petshopwebsite.com</li>
+        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+        <li><i class="fas fa-clock"></i> Mon - Fri: 9 AM - 10PM</li>
+        <li><i class="fas fa-clock"></i> Sat: 10 AM - 7 PM</li>
+        <li><i class="fas fa-ban"></i> Sunday: Closed</li>
+      </ul>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea placeholder="Your message" rows="5" required></textarea>
+      <button type="submit" class="contact-btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- Cart Icon -->
+    <div class="cart-icon" id="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cart-count">0</span>
+    </div>
+
+   
+
+
+
+  <script src="script.js"></script>
 
 </body>
 </html>
+
